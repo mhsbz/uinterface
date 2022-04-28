@@ -1,0 +1,19 @@
+syntax = "proto3";
+package user.v1;
+
+option go_package = "user/v1";
+
+service User {
+  rpc CreateUser (UserStructInput) returns (UserStructOutput);
+}
+
+message UserStructInput {
+  UserStruct user = 1;
+}
+message UserStructOutput {
+  UserStruct user = 1;
+}
+message UserStruct {
+  int32 id = 1;
+  string userName = 2;
+}
