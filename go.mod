@@ -1,4 +1,4 @@
-module uinterafce
+module github.com/mhsbz/uinterface
 
 go 1.17
 

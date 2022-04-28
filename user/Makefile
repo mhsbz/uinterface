@@ -1,5 +1,7 @@
 API_PROTO_FILES=$(shell find v1 -name *.proto)
 
+default:api
+
 .PHONY: api
 # generate api proto
 api:
